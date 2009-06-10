@@ -3,6 +3,7 @@
 # Gems (all environments)
 gem "robinsp-robins_html_helpers",
        :lib    => "robins_html_helpers",
+       :version => '>= 0.2.1',
        :source => "http://gems.github.com"
 
 rake "gems:install"
@@ -40,6 +41,9 @@ end
 # Remove deafault files
 run "rm README doc/README_FOR_APP"
 run "rm public/index.html public/images/rails.png"
+
+# Default layout
+generate :robins_layout
 
 # Default controller/action 
 file "app/controllers/static_controller.rb", <<-END
