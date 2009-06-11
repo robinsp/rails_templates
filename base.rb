@@ -1,3 +1,6 @@
+# Usage:
+# rails YOUR_APP_NAME -m http://github.com/robinsp/rails_templates/raw/master/base.rb
+
 
 
 # Gems (all environments)
