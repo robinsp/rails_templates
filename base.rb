@@ -6,7 +6,7 @@ gem "robinsp-robins_html_helpers",
        :version => '>= 0.2.1',
        :source => "http://gems.github.com"
 
-rake "gems:install"
+rake "gems:install", :sudo => true
 
 # Gems (test environments)
 with_options :env => 'test' do |test_env| 
@@ -14,7 +14,7 @@ with_options :env => 'test' do |test_env|
                  :lib    => "factory_girl",
                  :source => "http://gems.github.com"
   
-  test_env.rake "gems:install"
+  test_env.rake "gems:install", :sudo => true
 end 
 
 
