@@ -25,8 +25,8 @@ end
 if yes?("Use RSpec?")
   if yes?("RSpec as gems (answer no for plugins)?")
     with_options :env => 'test' do |test_env|
-      test_env.gem "rspec"
-      test_env.gem "rspec-rails"
+      test_env.gem "rspec", :lib => false
+      test_env.gem "rspec-rails", :lib => false
       test_env.rake "gems:install"
     end
 
